@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_columnWeight="1"
+    android:background="#081D2E"
     tools:context=".MainActivity">
 
     <Button
@@ -16,7 +17,7 @@
         android:padding="18dp"
         android:text="LET'S GO!"
         android:textSize="34sp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -44,7 +45,7 @@
         android:layout_marginEnd="8dp"
         android:padding="6dp"
         android:text="0/0"
-        android:textColor="#FFC107"
+        android:textColor="#EF6C00"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
+        android:id="@+id/optionGridLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="5dp"
@@ -85,6 +86,7 @@
             android:onClick="chooseAnswer"
             android:tag="0"
             android:text="14"
+            android:textColor="#5E35B1"
             android:textSize="24sp"
             app:layout_column="0"
             app:layout_columnWeight="1"
@@ -130,6 +132,7 @@
             android:onClick="chooseAnswer"
             android:tag="3"
             android:text="14"
+            android:textColor="#455A64"
             android:textSize="24sp"
             app:layout_column="1"
             app:layout_columnWeight="1"
